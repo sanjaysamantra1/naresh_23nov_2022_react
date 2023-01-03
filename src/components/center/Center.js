@@ -1,6 +1,11 @@
 import React from "react";
+import Demo1 from "../demo1/Demo1";
 import "./center.css";
 
 export default function Center() {
-  return <div className="center">Center Component</div>;
+  return (
+    <div className="center">
+      <Demo1 />
+    </div>
+  );
 }
