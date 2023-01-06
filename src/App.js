@@ -8,10 +8,10 @@ import Carousel from "./components/carousel/Carousel";
 export default function App() {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <Navbar />
-      <Categories />
-      <Carousel />
+      {/* <Categories /> */}
+      {/* <Carousel /> */}
       <Center />
       <Footer />
     </div>

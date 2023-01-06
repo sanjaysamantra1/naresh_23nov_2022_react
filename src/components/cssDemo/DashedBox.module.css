@@ -1,0 +1,11 @@
+.container {
+  margin: 40px;
+  border: 5px dashed pink;
+}
+.content {
+  font-size: 15px;
+  text-align: center;
+}
+.error {
+  color: red;
+}
