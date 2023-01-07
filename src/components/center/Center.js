@@ -7,10 +7,14 @@ import ConditionalCss from "../cssDemo/ConditionalCss";
 import CssDemo from "../cssDemo/CssDemo";
 import Demo1 from "../demo1/Demo1";
 import ExpressionDemo from "../expressionDemo/ExpressionDemo";
+import ForceUpdateDemo1 from "../forceUpdate/ForceUpdateDemo1";
+import ForceUpdateDemo2 from "../forceUpdate/ForceUpdateDemo2";
 import ListDemo1 from "../list/ListDemo1";
 import ListDemo2 from "../list/ListDemo2";
 import ListDemo3 from "../list/ListDemo3";
 import ListDemo4 from "../list/ListDemo4";
+import ProductList from "../list/product_list";
+import UsersList from "../list/UsersList";
 import "./center.css";
 
 export default function Center() {
@@ -27,7 +31,11 @@ export default function Center() {
       {/* <ListDemo1/> */}
       {/* <ListDemo2/> */}
       {/* <ListDemo3 /> */}
-      <ListDemo4/>
+      {/* <ListDemo4/> */}
+      {/* <ProductList /> */}
+      {/* <UsersList/> */}
+      {/* <ForceUpdateDemo1 /> */}
+      <ForceUpdateDemo2/>
     </div>
   );
 }
