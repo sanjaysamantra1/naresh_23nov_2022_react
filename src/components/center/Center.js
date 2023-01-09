@@ -9,6 +9,8 @@ import Demo1 from "../demo1/Demo1";
 import ExpressionDemo from "../expressionDemo/ExpressionDemo";
 import ForceUpdateDemo1 from "../forceUpdate/ForceUpdateDemo1";
 import ForceUpdateDemo2 from "../forceUpdate/ForceUpdateDemo2";
+import GreetDemo1 from "../greet/GreetDemo1";
+import GreetDemo2 from "../greet/GreetDemo2";
 import ListDemo1 from "../list/ListDemo1";
 import ListDemo2 from "../list/ListDemo2";
 import ListDemo3 from "../list/ListDemo3";
@@ -32,10 +34,14 @@ export default function Center() {
       {/* <ListDemo2/> */}
       {/* <ListDemo3 /> */}
       {/* <ListDemo4/> */}
-      {/* <ProductList /> */}
+      <ProductList />
       {/* <UsersList/> */}
       {/* <ForceUpdateDemo1 /> */}
-      <ForceUpdateDemo2/>
+      {/* <ForceUpdateDemo2/> */}
+      {/* <div id='div1' name='name1'></div> */}
+      {/* <GreetDemo1 name="Sachin" msg="Good Morning" /> */}
+      {/* <GreetDemo1 name="Rahul" msg="Good Evening"></GreetDemo1> */}
+      {/* <GreetDemo2 name="Ajay" msg="Good Afternoon" showTitle /> */}
     </div>
   );
 }
