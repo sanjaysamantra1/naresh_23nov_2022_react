@@ -1,11 +1,12 @@
 import React from "react";
 
 export default function Category(props) {
+  let { img_src, name } = props.category; // de-structuring
   return (
     <div className="text-center category">
-      <img src={props.category.img_src} alt="abc" />
+      <img src={img_src} alt="abc" />
       <div>
-        <span>{props.category.name}</span>
+        <span>{name}</span>
       </div>
     </div>
   );

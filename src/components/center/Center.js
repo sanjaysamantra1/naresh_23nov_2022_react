@@ -17,6 +17,8 @@ import ListDemo3 from "../list/ListDemo3";
 import ListDemo4 from "../list/ListDemo4";
 import ProductList from "../list/product_list";
 import UsersList from "../list/UsersList";
+import MyModal from "../props/MyModal";
+import Welcome from "../props/Welcome";
 import "./center.css";
 
 export default function Center() {
@@ -34,14 +36,41 @@ export default function Center() {
       {/* <ListDemo2/> */}
       {/* <ListDemo3 /> */}
       {/* <ListDemo4/> */}
-      <ProductList />
+      {/* <ProductList /> */}
       {/* <UsersList/> */}
       {/* <ForceUpdateDemo1 /> */}
       {/* <ForceUpdateDemo2/> */}
       {/* <div id='div1' name='name1'></div> */}
-      {/* <GreetDemo1 name="Sachin" msg="Good Morning" /> */}
+      {/* <GreetDemo1 msg="Good Morning" /> */}
+      {/* <GreetDemo1 name="Sachin" msg="Good Morning" age={45} /> */}
       {/* <GreetDemo1 name="Rahul" msg="Good Evening"></GreetDemo1> */}
       {/* <GreetDemo2 name="Ajay" msg="Good Afternoon" showTitle /> */}
+      {/* <Welcome></Welcome>
+      <hr/>
+      <Welcome>
+        <div>This is div-1 From Parent</div>
+        <div>This is div-2 From Parent</div>
+      </Welcome> */}
+      <MyModal heading="Registration Form">
+        <form id="modalBody">
+          <div className="form-group">
+            <label htmlFor="email">Email address:</label>
+            <input type="email" className="form-control" id="email" />
+          </div>
+          <div className="form-group">
+            <label htmlFor="pwd">Password:</label>
+            <input type="password" className="form-control" id="pwd" />
+          </div>
+          <div className="checkbox">
+            <label>
+              <input type="checkbox" /> Remember me
+            </label>
+          </div>
+          <button type="submit" className="btn btn-default">
+            Submit
+          </button>
+        </form>
+      </MyModal>
     </div>
   );
 }

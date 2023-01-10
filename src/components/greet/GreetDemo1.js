@@ -1,5 +1,11 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
-export default function GreetDemo1(props) {
-  return <div>Hello {props.name}, {props.msg}</div>
+export default function GreetDemo1({name,msg,age}) {
+  return <div>Hello {name}, {msg}, Your age is {age}</div>
 }
+GreetDemo1.propTypes = {	
+  name: PropTypes.string, // Optional prop
+  msg:PropTypes.string.isRequired, // manadatory prop
+  age:PropTypes.number,  // Optional prop
+};	
