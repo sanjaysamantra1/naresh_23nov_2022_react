@@ -19,9 +19,19 @@ import ProductList from "../list/product_list";
 import UsersList from "../list/UsersList";
 import MyModal from "../props/MyModal";
 import Welcome from "../props/Welcome";
+import RemainingChar from "../state/RemainingChar";
+import ShowHideDemo1 from "../state/ShowHideDemo1";
+import ShowHideDemo2 from "../state/ShowHideDemo2";
+import StateDemo1 from "../state/StateDemo1";
+import StateDemo2 from "../state/StateDemo2";
+import StateDemo3 from "../state/StateDemo3";
+import TogglePassword1 from "../state/TogglePassword1";
 import "./center.css";
 
 export default function Center() {
+  let f1 = function () {
+    console.log("I am f1 from center component");
+  };
   return (
     <div className="center">
       {/* <Demo1 /> */}
@@ -42,7 +52,7 @@ export default function Center() {
       {/* <ForceUpdateDemo2/> */}
       {/* <div id='div1' name='name1'></div> */}
       {/* <GreetDemo1 msg="Good Morning" /> */}
-      {/* <GreetDemo1 name="Sachin" msg="Good Morning" age={45} /> */}
+      {/* <GreetDemo1 name="Sachin" msg="Good Morning" age={45} f1={f1} /> */}
       {/* <GreetDemo1 name="Rahul" msg="Good Evening"></GreetDemo1> */}
       {/* <GreetDemo2 name="Ajay" msg="Good Afternoon" showTitle /> */}
       {/* <Welcome></Welcome>
@@ -51,7 +61,7 @@ export default function Center() {
         <div>This is div-1 From Parent</div>
         <div>This is div-2 From Parent</div>
       </Welcome> */}
-      <MyModal heading="Registration Form">
+      {/* <MyModal heading="Registration Form">
         <form id="modalBody">
           <div className="form-group">
             <label htmlFor="email">Email address:</label>
@@ -70,7 +80,14 @@ export default function Center() {
             Submit
           </button>
         </form>
-      </MyModal>
+      </MyModal> */}
+      {/* <StateDemo1 /> */}
+      {/* <StateDemo2 /> */}
+      {/* <StateDemo3/> */}
+      {/* <ShowHideDemo1/> */}
+      {/* <ShowHideDemo2 /> */}
+      {/* <TogglePassword1/> */}
+      <RemainingChar/>
     </div>
   );
 }
