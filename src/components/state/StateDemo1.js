@@ -8,13 +8,28 @@ export default class StateDemo1 extends Component {
   increment = () => {
     // To Update the state call setState()
     let newState = { counter: this.state.counter + 1 };
-    this.setState(newState);
+    
+    this.setState(newState, () => {
+      console.log("value updated ", this.state.counter);
+    }); // asynchronous
+
+    this.setState((prevState) => ({
+      counter: prevState.counter + 1,
+    }));
+  };
+  incrementCountFiveTimes = () => {
+    this.increment();
+    this.increment();
+    this.increment();
+    this.increment();
+    this.increment();
   };
   render() {
     return (
       <>
         <div>Counter is : {this.state.counter}</div>
         <button onClick={this.increment}>Increment</button>
+        <button onClick={this.incrementCountFiveTimes}>Increment 5</button>
       </>
     );
   }

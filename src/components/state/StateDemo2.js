@@ -6,6 +6,7 @@ export default function StateDemo2() {
 
   let increment = () => {
     setCount(count + 1);
+    console.log("state updated", count);
   };
   return (
     <>

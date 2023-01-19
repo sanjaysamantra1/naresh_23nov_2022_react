@@ -17,8 +17,11 @@ import ListDemo3 from "../list/ListDemo3";
 import ListDemo4 from "../list/ListDemo4";
 import ProductList from "../list/product_list";
 import UsersList from "../list/UsersList";
+import ModalDemo1 from "../modal/ModalDemo1";
+import ModalDemo2 from "../modal/ModalDemo2";
 import MyModal from "../props/MyModal";
 import Welcome from "../props/Welcome";
+import EmployeeList from "../state/EmployeeList";
 import RemainingChar from "../state/RemainingChar";
 import ShowHideDemo1 from "../state/ShowHideDemo1";
 import ShowHideDemo2 from "../state/ShowHideDemo2";
@@ -26,6 +29,7 @@ import StateDemo1 from "../state/StateDemo1";
 import StateDemo2 from "../state/StateDemo2";
 import StateDemo3 from "../state/StateDemo3";
 import TogglePassword1 from "../state/TogglePassword1";
+import SweetAlertDemo1 from "../sweetAlert/SweetAlertDemo1";
 import "./center.css";
 
 export default function Center() {
@@ -87,7 +91,11 @@ export default function Center() {
       {/* <ShowHideDemo1/> */}
       {/* <ShowHideDemo2 /> */}
       {/* <TogglePassword1/> */}
-      <RemainingChar/>
+      {/* <RemainingChar/> */}
+      {/* <SweetAlertDemo1 /> */}
+      {/* <ModalDemo1 /> */}
+      {/* <ModalDemo2/> */}
+      <EmployeeList />
     </div>
   );
 }
