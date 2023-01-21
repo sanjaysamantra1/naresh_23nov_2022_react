@@ -6,6 +6,7 @@ import ConditionalDemo4 from "../conditionalRendering/ConditionalDemo4";
 import ConditionalCss from "../cssDemo/ConditionalCss";
 import CssDemo from "../cssDemo/CssDemo";
 import Demo1 from "../demo1/Demo1";
+import EmployeeCRUD from "../employeeCRUD/EmployeeCRUD";
 import ExpressionDemo from "../expressionDemo/ExpressionDemo";
 import ForceUpdateDemo1 from "../forceUpdate/ForceUpdateDemo1";
 import ForceUpdateDemo2 from "../forceUpdate/ForceUpdateDemo2";
@@ -95,7 +96,8 @@ export default function Center() {
       {/* <SweetAlertDemo1 /> */}
       {/* <ModalDemo1 /> */}
       {/* <ModalDemo2/> */}
-      <EmployeeList />
+      {/* <EmployeeList /> */}
+      <EmployeeCRUD />
     </div>
   );
 }
