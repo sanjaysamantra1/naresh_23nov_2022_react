@@ -7,6 +7,9 @@ import ConditionalCss from "../cssDemo/ConditionalCss";
 import CssDemo from "../cssDemo/CssDemo";
 import Demo1 from "../demo1/Demo1";
 import EmployeeCRUD from "../employeeCRUD/EmployeeCRUD";
+import EventDemo1 from "../events/EventDemo1";
+import EventDemo2 from "../events/EventDemo2";
+import EventDemo3 from "../events/EventDemo3";
 import ExpressionDemo from "../expressionDemo/ExpressionDemo";
 import ForceUpdateDemo1 from "../forceUpdate/ForceUpdateDemo1";
 import ForceUpdateDemo2 from "../forceUpdate/ForceUpdateDemo2";
@@ -18,6 +21,9 @@ import ListDemo3 from "../list/ListDemo3";
 import ListDemo4 from "../list/ListDemo4";
 import ProductList from "../list/product_list";
 import UsersList from "../list/UsersList";
+import MemoDemo1 from "../memo/MemoDemo1";
+import PureCompDemo1 from "../misc/PureCompDemo1";
+import PureCompDemo2 from "../misc/PureCompDemo2";
 import ModalDemo1 from "../modal/ModalDemo1";
 import ModalDemo2 from "../modal/ModalDemo2";
 import MyModal from "../props/MyModal";
@@ -97,7 +103,13 @@ export default function Center() {
       {/* <ModalDemo1 /> */}
       {/* <ModalDemo2/> */}
       {/* <EmployeeList /> */}
-      <EmployeeCRUD />
+      {/* <EmployeeCRUD /> */}
+      {/* <EventDemo1/> */}
+      {/* <EventDemo2 /> */}
+      {/* <EventDemo3 /> */}
+      {/* <PureCompDemo1/> */}
+      {/* <PureCompDemo2 /> */}
+      <MemoDemo1/>
     </div>
   );
 }
