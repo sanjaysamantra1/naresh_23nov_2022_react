@@ -15,6 +15,8 @@ import ForceUpdateDemo1 from "../forceUpdate/ForceUpdateDemo1";
 import ForceUpdateDemo2 from "../forceUpdate/ForceUpdateDemo2";
 import GreetDemo1 from "../greet/GreetDemo1";
 import GreetDemo2 from "../greet/GreetDemo2";
+import LifecycleDemo1 from "../lifecycleHooks/LifecycleDemo1";
+import LifecycleDemo2 from "../lifecycleHooks/LifecycleDemo2";
 import ListDemo1 from "../list/ListDemo1";
 import ListDemo2 from "../list/ListDemo2";
 import ListDemo3 from "../list/ListDemo3";
@@ -109,7 +111,9 @@ export default function Center() {
       {/* <EventDemo3 /> */}
       {/* <PureCompDemo1/> */}
       {/* <PureCompDemo2 /> */}
-      <MemoDemo1/>
+      {/* <MemoDemo1/> */}
+      {/* <LifecycleDemo1 name="Rahul" /> */}
+      <LifecycleDemo2/>
     </div>
   );
 }
