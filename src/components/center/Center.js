@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ConditionalDemo1 from "../conditionalRendering/ConditionalDemo1";
 import ConditionalDemo2 from "../conditionalRendering/ConditionalDemo2";
 import ConditionalDemo3 from "../conditionalRendering/ConditionalDemo3";
@@ -17,6 +17,8 @@ import GreetDemo1 from "../greet/GreetDemo1";
 import GreetDemo2 from "../greet/GreetDemo2";
 import LifecycleDemo1 from "../lifecycleHooks/LifecycleDemo1";
 import LifecycleDemo2 from "../lifecycleHooks/LifecycleDemo2";
+import LifecycleDemo3 from "../lifecycleHooks/LifecycleDemo3";
+import LifecycleDemo4 from "../lifecycleHooks/LifecycleDemo4";
 import ListDemo1 from "../list/ListDemo1";
 import ListDemo2 from "../list/ListDemo2";
 import ListDemo3 from "../list/ListDemo3";
@@ -42,6 +44,8 @@ import SweetAlertDemo1 from "../sweetAlert/SweetAlertDemo1";
 import "./center.css";
 
 export default function Center() {
+  const [flag, setFlag] = useState(true);
+
   let f1 = function () {
     console.log("I am f1 from center component");
   };
@@ -113,7 +117,9 @@ export default function Center() {
       {/* <PureCompDemo2 /> */}
       {/* <MemoDemo1/> */}
       {/* <LifecycleDemo1 name="Rahul" /> */}
-      <LifecycleDemo2/>
+      {/* <LifecycleDemo2/> */}
+      {flag ? <LifecycleDemo3 /> : <LifecycleDemo4 />}
+      <button onClick={() => setFlag(!flag)}>Toggle Flag</button>
     </div>
   );
 }
