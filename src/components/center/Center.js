@@ -13,12 +13,19 @@ import EventDemo3 from "../events/EventDemo3";
 import ExpressionDemo from "../expressionDemo/ExpressionDemo";
 import ForceUpdateDemo1 from "../forceUpdate/ForceUpdateDemo1";
 import ForceUpdateDemo2 from "../forceUpdate/ForceUpdateDemo2";
+import FormDemo1 from "../form/FormDemo1";
+import FormDemo2 from "../form/FormDemo2";
+import FormDemo3 from "../form/FormDemo3";
+import FormDemo4 from "../form/FormDemo4";
+import FormDemo5 from "../form/FormDemo5";
+import FormDemo6 from "../form/FormDemo6";
 import GreetDemo1 from "../greet/GreetDemo1";
 import GreetDemo2 from "../greet/GreetDemo2";
 import LifecycleDemo1 from "../lifecycleHooks/LifecycleDemo1";
 import LifecycleDemo2 from "../lifecycleHooks/LifecycleDemo2";
 import LifecycleDemo3 from "../lifecycleHooks/LifecycleDemo3";
 import LifecycleDemo4 from "../lifecycleHooks/LifecycleDemo4";
+import LifecycleDemo5 from "../lifecycleHooks/LifecycleDemo5";
 import ListDemo1 from "../list/ListDemo1";
 import ListDemo2 from "../list/ListDemo2";
 import ListDemo3 from "../list/ListDemo3";
@@ -32,6 +39,10 @@ import ModalDemo1 from "../modal/ModalDemo1";
 import ModalDemo2 from "../modal/ModalDemo2";
 import MyModal from "../props/MyModal";
 import Welcome from "../props/Welcome";
+import RefDemo1 from "../ref/RefDemo1";
+import RefDemo2 from "../ref/RefDemo2";
+import RefDemo3 from "../ref/RefDemo3";
+import RefDemo4 from "../ref/RefDemo4";
 import EmployeeList from "../state/EmployeeList";
 import RemainingChar from "../state/RemainingChar";
 import ShowHideDemo1 from "../state/ShowHideDemo1";
@@ -118,8 +129,19 @@ export default function Center() {
       {/* <MemoDemo1/> */}
       {/* <LifecycleDemo1 name="Rahul" /> */}
       {/* <LifecycleDemo2/> */}
-      {flag ? <LifecycleDemo3 /> : <LifecycleDemo4 />}
-      <button onClick={() => setFlag(!flag)}>Toggle Flag</button>
+      {/* {flag ? <LifecycleDemo3 /> : <LifecycleDemo4 />}
+      <button onClick={() => setFlag(!flag)}>Toggle Flag</button> */}
+      {/* <LifecycleDemo5/> */}
+      {/* <RefDemo1 /> */}
+      {/* <RefDemo2/> */}
+      {/* <RefDemo3/> */}
+      {/* <RefDemo4/> */}
+      {/* <FormDemo1/> */}
+      {/* <FormDemo2/> */}
+      {/* <FormDemo3/> */}
+      <FormDemo4/>
+      {/* <FormDemo5/> */}
+      {/* <FormDemo6/> */}
     </div>
   );
 }
