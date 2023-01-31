@@ -15,7 +15,7 @@ const emptyUser = {
   lName: "",
   skills: [],
 };
-const emptySkill = { skillname: "", exp: 0 };
+const emptySkill = { skillname: "New Skill", exp: 0 };
 
 export default function FormDemo4() {
   const [users, setUsers] = useState(initialUsers);
@@ -24,8 +24,10 @@ export default function FormDemo4() {
     e.preventDefault();
     setUsers([...users, emptyUser]);
   };
-  const addSKill = (e) => {
-    e.preventDefault();
+  const addSkill = (userInd) => {
+    users[userInd].skills.push(emptySkill);
+    console.log(users)
+    setUsers([...users]);
   };
 
   return (
@@ -57,8 +59,17 @@ export default function FormDemo4() {
                   </>
                 );
               })}
-              <input />
-              <button onClick={() => addSKill()} className="m-2">Add Skill</button>
+              <input placeholder="skillName" />
+              <input placeholder="experience" />
+              <button
+                onClick={(e) => {
+                  e.preventDefault();
+                  addSkill(userInd);
+                }}
+                className="m-2"
+              >
+                Add Skill
+              </button>
             </div>
           );
         })}
