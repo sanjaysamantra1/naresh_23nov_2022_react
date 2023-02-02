@@ -23,6 +23,8 @@ import GreetDemo1 from "../greet/GreetDemo1";
 import GreetDemo2 from "../greet/GreetDemo2";
 import HttpDemo1 from "../HTTP/HttpDemo1";
 import HttpDemo2 from "../HTTP/HttpDemo2";
+import HttpDemo3 from "../HTTP/HttpDemo3";
+import HttpDemo4 from "../HTTP/HttpDemo4";
 import LifecycleDemo1 from "../lifecycleHooks/LifecycleDemo1";
 import LifecycleDemo2 from "../lifecycleHooks/LifecycleDemo2";
 import LifecycleDemo3 from "../lifecycleHooks/LifecycleDemo3";
@@ -145,7 +147,9 @@ export default function Center() {
       {/* <FormDemo5/> */}
       {/* <FormDemo6/> */}
       {/* <HttpDemo1 /> */}
-      <HttpDemo2/>
+      {/* <HttpDemo2/> */}
+      {/* <HttpDemo3/> */}
+      <HttpDemo4/>
     </div>
   );
 }
