@@ -14,6 +14,8 @@ import Aboutus from "./components/aboutus/Aboutus";
 import ProductList from "./components/list/product_list";
 import Careers from "./components/careers/Careers";
 import Notfound from "./components/notfound/Notfound";
+import ProductDetails from "./components/list/ProductDetails";
+import ProductDetail from "./components/list/ProductDetail";
 
 export default function App() {
   MyInterceptor1();
@@ -33,6 +35,8 @@ export default function App() {
         <Route exact path="/aboutus" element={<Aboutus />} />
         <Route exact path="/careers" element={<Careers />} />
         <Route exact path="/productlist" element={<ProductList />} />
+        <Route path="/productdetails/:id" element={<ProductDetails />} />
+        <Route path="/productdetail" element={<ProductDetail />} />
         <Route path="*" element={<Notfound />} />
       </Routes>
 

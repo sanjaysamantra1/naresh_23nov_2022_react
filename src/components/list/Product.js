@@ -1,7 +1,16 @@
 import React from "react";
+import { createSearchParams, Link, useNavigate } from "react-router-dom";
 
 export default function Product(props) {
-  const { image, category, title, price, rating } = props.prod;
+  const { image, category, title, price, rating, id } = props.prod;
+
+  const navigate = useNavigate();
+  const navigateHandler = (title, price) => {
+    navigate({
+      pathname: "/productdetail",
+      search: `?${createSearchParams({ title, price })}`
+    });
+  };
   // Props De-structuring
   return (
     <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3">
@@ -17,7 +26,9 @@ export default function Product(props) {
           <p className="card-text">{title}</p>
           <p className="card-text">Price: {price}</p>
           <p className="card-text">Ratings: {rating.rate}</p>
-          <button className="btn btn-primary">BUY NOW </button>
+          <Link to={`/productdetails/${id}`}>View</Link>
+          <button onClick={() => {
+              navigateHandler(title, price)}}>View-2</button>
         </div>
       </div>
     </div>
