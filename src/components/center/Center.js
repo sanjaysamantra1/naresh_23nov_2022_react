@@ -34,7 +34,6 @@ import ListDemo1 from "../list/ListDemo1";
 import ListDemo2 from "../list/ListDemo2";
 import ListDemo3 from "../list/ListDemo3";
 import ListDemo4 from "../list/ListDemo4";
-import ProductList from "../list/product_list";
 import UsersList from "../list/UsersList";
 import MemoDemo1 from "../memo/MemoDemo1";
 import PureCompDemo1 from "../misc/PureCompDemo1";

@@ -31,6 +31,8 @@ export default function SweetAlertDemo1() {
         Swal.fire("Saved!", "", "success");
       } else if (result.isDenied) {
         Swal.fire("Changes are not saved", "", "info");
+        // 11.7.0  swal.fire()
+        // 11.9.5  swal.open ()
       }
     });
   };
