@@ -21,47 +21,51 @@ import ProtectedRoute from "./utils/ProtectedRoute";
 import Home2 from "./components/home/Home2";
 import React from "react";
 import { Suspense } from "react";
+import userContext from "./utils/userContext";
 
 const ProductList = React.lazy(() => import("./components/list/product_list"));
 
 export default function App() {
+  console.log(userContext);
   MyInterceptor1();
   MyInterceptor2();
   MyInterceptor3();
   MyInterceptor4();
   return (
     <div>
-      {/* <Header /> */}
-      <Navbar />
-      {/* <Categories /> */}
-      {/* <Carousel /> */}
-      <Suspense fallback={<h1>Loading...</h1>}>
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/home" element={<Home />} />
-          <Route exact path="/home/2" element={<Home2 />} />
-          <Route exact path="/aboutus" element={<Aboutus />} />
-          <Route exact path="/careers" element={<Careers />}>
-            <Route index element={<PermanentJobs />} />
-            <Route path="permanent" element={<PermanentJobs />} />
-            <Route path="contract" element={<ContractJobs />} />
-          </Route>
-          <Route
-            exact
-            path="/productlist"
-            element={
-              <ProtectedRoute>
-                <ProductList />
-              </ProtectedRoute>
-            }
-          />
-          <Route path="/productdetails/:id" element={<ProductDetails />} />
-          <Route path="/productdetail" element={<ProductDetail />} />
-          <Route path="*" element={<Notfound />} />
-        </Routes>
-      </Suspense>
-      <Center />
-      <Footer />
+      <userContext.Provider value="{name:'sanjay',age:22,sal:5000}">
+        {/* <Header /> */}
+        <Navbar />
+        {/* <Categories /> */}
+        {/* <Carousel /> */}
+        <Suspense fallback={<h1>Loading...</h1>}>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/home" element={<Home />} />
+            <Route exact path="/home/2" element={<Home2 />} />
+            <Route exact path="/aboutus" element={<Aboutus />} />
+            <Route exact path="/careers" element={<Careers />}>
+              <Route index element={<PermanentJobs />} />
+              <Route path="permanent" element={<PermanentJobs />} />
+              <Route path="contract" element={<ContractJobs />} />
+            </Route>
+            <Route
+              exact
+              path="/productlist"
+              element={
+                <ProtectedRoute>
+                  <ProductList />
+                </ProtectedRoute>
+              }
+            />
+            <Route path="/productdetails/:id" element={<ProductDetails />} />
+            <Route path="/productdetail" element={<ProductDetail />} />
+            <Route path="*" element={<Notfound />} />
+          </Routes>
+        </Suspense>
+        <Center />
+        <Footer />
+      </userContext.Provider>
     </div>
   );
 }

@@ -116,7 +116,7 @@ export default function Center() {
       {/* <StateDemo2 /> */}
       {/* <StateDemo3/> */}
       {/* <ShowHideDemo1/> */}
-      {/* <ShowHideDemo2 /> */}
+      <ShowHideDemo2 />
       {/* <TogglePassword1/> */}
       {/* <RemainingChar/> */}
       {/* <SweetAlertDemo1 /> */}
