@@ -5,6 +5,7 @@ export default function AddEmployee({addEmp}) {
   const [employeeName, setEmployeeName] = useState("Prakash");
   const [employeeSalary, setEmployeeSalary] = useState(8000);
 
+
   const changeHandler = (e) => {
     if (e.target.name === "eID") {
       setEmployeeID(e.target.value);

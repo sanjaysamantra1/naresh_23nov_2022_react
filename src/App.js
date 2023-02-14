@@ -38,7 +38,7 @@ export default function App() {
         <Navbar />
         {/* <Categories /> */}
         {/* <Carousel /> */}
-        <Suspense fallback={<h1>Loading...</h1>}>
+        {/* <Suspense fallback={<h1>Loading...</h1>}>
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/home" element={<Home />} />
@@ -62,7 +62,7 @@ export default function App() {
             <Route path="/productdetail" element={<ProductDetail />} />
             <Route path="*" element={<Notfound />} />
           </Routes>
-        </Suspense>
+        </Suspense> */}
         <Center />
         <Footer />
       </userContext.Provider>

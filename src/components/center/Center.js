@@ -21,6 +21,10 @@ import FormDemo5 from "../form/FormDemo5";
 import FormDemo6 from "../form/FormDemo6";
 import GreetDemo1 from "../greet/GreetDemo1";
 import GreetDemo2 from "../greet/GreetDemo2";
+import UseCallBackExample1 from "../hooks/UseCallBackExample1";
+import UseIdExample1 from "../hooks/UseIdExample1";
+import UseMemoExample1 from "../hooks/UseMemoExample1";
+import UseReducerDemo from "../hooks/UseReducerDemo";
 import HttpDemo1 from "../HTTP/HttpDemo1";
 import HttpDemo2 from "../HTTP/HttpDemo2";
 import HttpDemo3 from "../HTTP/HttpDemo3";
@@ -116,7 +120,7 @@ export default function Center() {
       {/* <StateDemo2 /> */}
       {/* <StateDemo3/> */}
       {/* <ShowHideDemo1/> */}
-      <ShowHideDemo2 />
+      {/* <ShowHideDemo2 /> */}
       {/* <TogglePassword1/> */}
       {/* <RemainingChar/> */}
       {/* <SweetAlertDemo1 /> */}
@@ -149,6 +153,10 @@ export default function Center() {
       {/* <HttpDemo2/> */}
       {/* <HttpDemo3/> */}
       {/* <HttpDemo4/> */}
+      {/* <UseReducerDemo /> */}
+      {/* <UseMemoExample1 /> */}
+      {/* <UseCallBackExample1/> */}
+      <UseIdExample1 />
     </div>
   );
 }
